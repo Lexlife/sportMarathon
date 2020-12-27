@@ -49,6 +49,11 @@ app.use((req, res, next) => {
 });
 
 app.get("/", (req, res) => {
+  // обращается к сайту каждые 29 минут
+  const https = require("https");
+  setTimeout(() => {
+  https.get("https://sportmarathon.herokuapp.com");
+}, 1000*60*29); // every 29 minutes
   res.render("mainpage");
 });
 
