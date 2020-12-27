@@ -1,0 +1,11 @@
+ВАШИ МАРАФОНЫ
+{{#each user.bougthMarathon}}
+<div class='marathon-item'>
+  <div class="text-container">
+    <h2><a href="/user/marathon/exercisepage/{{this._id}}">{{this.marathonName}}</a></h2>
+    <p>{{this.marathonDate}}</p>
+  </div>
+  
+  <div id='{{this.marathonColor}}' class='bg-color-square'><img src="{{this.marathonImg}}" alt=""></div>
+</div>
+{{/each}}

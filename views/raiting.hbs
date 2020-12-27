@@ -1,0 +1,18 @@
+{{!-- таблица рейтинга
+{{#each user}}
+<p>{{this.username}} : {{this.points}}</p>
+{{/each}} --}}
+
+
+<div class="container">
+<div>
+  <img style = 'width: 100px;'  src="/images/kubok.png" alt="" class='center'>
+</div>
+  <h1 style="font-size: 200%;">Рейтинг</h1>
+  <ol>
+  {{#each user}}
+    <li>{{this.username}} : {{this.points}}</li><br>
+  {{/each}}
+  </ol>
+
+</div>

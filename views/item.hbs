@@ -1,0 +1,18 @@
+
+<div class="container">
+  <div class="marathon-header">
+    <div class="text-container">
+      <h1>{{item.marathonName}}</h1>
+      <p>{{item.marathonDate}}</p>
+    </div>
+    <img src="{{item.marathonImg}}" alt="">
+    <div id='{{item.marathonColor}}' class='bg-color-square'></div>
+  </div>
+  <div class='main-text'>{{item.marathonText}}
+  </div>
+  {{#if active}}
+  <form action="/user/marathon/{{item.id}}" method="POST">
+    <button class="buy-button" type="submit">Добавить</button>
+  </form>
+  {{/if}}
+</div>

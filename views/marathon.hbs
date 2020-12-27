@@ -1,0 +1,10 @@
+{{#each marathons}}
+<div class='marathon-item'>
+  <div class="text-container">
+    <h2><a href="/user/marathon/{{this._id}}">{{this.marathonName}}</a></h2>
+    <p>{{this.marathonDate}}</p>
+  </div>
+  {{!-- <img src="{{this.marathonImg}}" alt=""> --}}
+  <div  id='{{this.marathonColor}}' class='bg-color-square' ><img src="{{this.marathonImg}}" alt=""></div>
+</div>
+{{/each}}

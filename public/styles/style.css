@@ -1,0 +1,252 @@
+*,
+*:before,
+*:after {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+.container {
+  width: 375px;
+}
+
+p.half-opacity {
+  opacity: 0.5;
+}
+
+.passed {
+  opacity: 0.4;
+}
+
+ul.hr li {
+  display: inline;
+}
+
+.marathon-item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  height: 86px;
+  width: 359px;
+  margin-top: 16px;
+}
+
+.marathon-item img {
+  position: absolute;
+  left: -12px;
+  top: 13px;
+  width: 78px;
+}
+
+.marathon-item .text-container {
+  margin-left: 20px;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+.bg-color-square {
+  position: relative;
+  height: 86px;
+  width: 86px;
+  border-radius: 20px;
+}
+
+
+#first {
+  background: linear-gradient(180deg, #a5d4ff 0%, #e6f7ff 100%);
+}
+
+#second {
+  background: linear-gradient(180deg, #0066ff 0%, #339dff 100%);
+}
+
+#third {
+  background: radial-gradient(100% 100% at 50% 0%, #02ffff 0%, #00c2ff 100%);
+}
+
+#forth {
+  background: linear-gradient(180deg, #cde960 0%, #4f9d00 100%);
+}
+
+#fifth {
+  background: linear-gradient(180deg, #dce8f2 0%, #b8c3d3 100%);
+}
+
+#sixth {
+  background: linear-gradient(180deg, #4b73ff 0%, #a7eaff 100%);
+}
+
+#seventh {
+  background: linear-gradient(180deg, #ff76fa 0%, #b659ff 100%);
+}
+
+#eighth {
+  background: linear-gradient(180deg, #93f8ff 0%, #70cad7 100%);
+}
+
+#ninth {
+  background: linear-gradient(180deg, #ffc453 0%, #ffe27d 100%);
+}
+
+.train-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* стили для страницы марафона */
+
+.marathon-header {
+  width: 375px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.marathon-header img {
+  position: relative;
+  left: 54px;
+  top: 13px;
+  height: 60px;
+}
+
+.rating {
+  height: 116px;
+  width: 339px;
+  border-radius: 20px;
+  padding: 10px;
+  background: #ffffff;
+  /* Цвет фона */
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.15);
+  /* Параметры тени */
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: large;
+  height: 115px;
+  width: 115px;
+  border-radius: 20px;
+  background: #ffffff;
+  /* Цвет фона */
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.15);
+  /* Параметры тени */
+  padding: 10px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.open {
+  width: 90px;
+}
+
+/* страница "купить" каждого марафона */
+
+.main-text {
+  width: 343px;
+  padding: 10px;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.4px;
+  text-align: left;
+}
+
+.buy-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+  width: 343px;
+  border-radius: 10px;
+  background: #007aff;
+  color: white;
+  border: 1px solid #999;
+}
+
+/* стиль картинки на самой первой странице */
+
+#main {
+  width: 375px;
+  border-radius: 20px;
+}
+
+/* стиль для формы регистрации */
+
+.form-class {
+  width: 375px;
+  display: block;
+  align-items: center;
+}
+
+.register {
+  text-align: center;
+}
+
+.register-left {
+  text-align: right;
+}
+
+<<<<<<< HEAD
+=======
+/* страница упражнений  */
+>>>>>>> 2a7c0410153a4195f58bd497c6c8d213e0016f2e
+h1 {
+  text-align: center;
+}
+p.center {
+  text-align: center;
+  font-size: 150%;
+  font-weight: 800;
+}
+.center {
+  text-align: center;
+  font-size: 120%;
+}
+img.center {
+  width: 300px;
+}
+.rectangle {
+  width: 355px;
+  border-radius: 20px;
+  background: #ffffff; /* Цвет фона */
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.15); /* Параметры тени */
+  padding: 10px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+/* стили для страницы таймера */
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #ffffff; /* Цвет фона */
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.15); /* Параметры тени */
+  padding: 10px;
+  margin: 10px;
+  font-size: 600%;
+  font-weight: 900;
+}
+
+button:disabled{background: grey;}

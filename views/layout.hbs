@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{title}}</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.png" />
+  <link rel='stylesheet' href='/styles/style.css' />
+</head>
+<div class="wrapper">
+  <nav>
+    <ul class="hr">
+      {{#if username}}
+      <li>{{username}}</li> |
+      <li><a href="/user/logout">Выйти</a></li> |
+      <li><a href="/user/marathon">Марафоны</a></li> |
+      <li><a href="/user/personal">Личный кабинет</a></li> |
+      <li><a href="/user/raiting">рейтинг</a></li> |
+
+
+      {{else}}
+      <li><a href="/user/signup">Зарегистрироваться</a></li> |
+      <li><a href="/user/signin">Залогиниться</a></li> |
+      {{/if}}
+    </ul>
+  </nav>
+
+  <body>
+    {{{body}}}
+  </body>
+</div>
+
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "day2-project",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "mon": "fuser -n tcp -k 3000; clear; nodemon app.js --ignore sessions",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.5",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "express-session": "^1.17.1",
+    "hbs": "~4.0.4",
+    "http-errors": "~1.6.3",
+    "mongoose": "^5.11.8",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

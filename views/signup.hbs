@@ -1,0 +1,33 @@
+<div class="form-class">
+  <form action="/user/signup" method="POST">
+
+    <div class="register">
+      <h1>Регистрация</h1>
+    </div>
+    <p>Пожалуйста, заполните форму для регистрации:</p>
+    <div class="register-left">
+      <p>
+        <label for="username"><b>Имя пользователя</b></label>
+        <input type="text" placeholder="Enter Username" name="username" required>
+      </p>
+
+      <p>
+        <label for="psw"><b>Пароль</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+      </p>
+
+      <p>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+      </p>
+    </div>
+
+
+    <div class="register">
+      <button type="submit" class="registerbtn">Зарегистрироваться</button>
+    </div>
+
+    <p>У вас уже есть аккаунт? Тогда Вам нужно <a href="/user/signin">залогиниться</a>.</p>
+
+  </form>
+</div>

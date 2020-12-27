@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>После выполнения основных заданий выполните заминку:</h1>
+  {{#each exercise}}
+  <div class="rectangle">
+
+    <p class='center'>{{this.exerciseName}}</p>
+    <div><img src="{{this.exerciseImg}}" alt="" class='center'></div>
+    <div class='center'>{{this.exerciseText}}</div>
+    <br>
+    <form action="/user/marathon/exercisepage/razminka/timer" method="POST">
+      <button class="buy-button" type="submit">Начать</button>
+    </form>
+
+  </div>
+  {{/each}}
+
+
+</div>

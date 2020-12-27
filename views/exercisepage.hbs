@@ -1,0 +1,62 @@
+<div class="container">
+
+  <div class="marathon-header">
+    <div class="text-container">
+      <h1>{{item.marathonName}}</h1>
+      <p>{{item.marathonDate}}</p>
+    </div>
+    <img src="{{item.marathonImg}}" alt="">
+    <div id='{{item.marathonColor}}' class='bg-color-square'></div>
+  </div>
+  <br>
+  <div class='rating'>
+    <h2><img src="/images/trophy.png" alt=""> {{numberraiting}} место в рейтинге</h2>
+    <p>Вы набрали {{points}} баллов. До следующего места
+      в рейтинге осталось набрать ещё {{minus}} баллов.</p>
+  </div>
+
+  {{!-- {{#each exercise}}
+
+
+  {{!-- <div>{{this.exerciseImg}}</div> --}}
+  {{!-- <p class='half-opacity'>this.exerciseImg</p> --}}
+
+
+  {{!-- <div class='square'>{{this.exerciseImg}}</div>
+  <div>{{this.exerciseName}}</div>
+  <div>{{exerciseText}}</div>
+  {{/each}} --}}
+
+
+  <p class='half-opacity'>ПЕРЕД И ПОСЛЕ ТРЕНИРОВКИ</p>
+
+  <div class="train-container">
+    <div class='square'><a href="/user/marathon/exercisepage/razminka">разминка</a></div>
+    <div class='square'><a href="/user/marathon/exercisepage/zaminka">заминка</a></div>
+  </div>
+  {{#each exercise}}
+  <p class='half-opacity'>{{this.exerciseName}}</p>
+
+  <div class="train-container">
+    <div class='square'><img src="{{this.exerciseImg}}" alt="" class='open'></div>
+    <div class='square'><img src="/images/lock.png" alt=""></div>
+    <div class='square'><img src="/images/lock.png" alt=""></div>
+  </div>
+  {{/each}}
+  {{!-- <p class='half-opacity'>НАЗВАНИЕ</p>
+
+  <div class="train-container">
+    <div class='square'>1</div>
+    <div class='square'>2</div>
+    <div class='square'><img src="/images/lock.png" alt=""></div>
+    <div class='square'><img src="/images/lock.png" alt=""></div>
+  </div>
+
+  <p class='half-opacity'>НАЗВАНИЕ</p>
+
+  <div class="train-container">
+    <div class='square'>1</div>
+    <div class='square'><img src="/images/lock.png" alt=""></div>
+  </div> --}}
+
+</div>
