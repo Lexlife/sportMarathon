@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const dbName = "marathon";
-const dbPath = `mongodb://localhost/${dbName}`;
+const dbPath = process.env.DB;
 const User = require("./models/user.js");
 const Marathon = require("./models/marathon");
 const Exercise = require("./models/exercise");
